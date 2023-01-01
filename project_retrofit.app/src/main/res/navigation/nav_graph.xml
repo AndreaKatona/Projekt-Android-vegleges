@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/nav_graph"
+  app:startDestination="@id/loginFragment">
+
+  <fragment
+    android:id="@+id/loginFragment"
+    android:name="com.zoltanlorinczi.project_retrofit.fragment.LoginFragment"
+    android:label="LoginFragment"
+    tools:layout="@layout/fragment_login">
+
+    <action
+      android:id="@+id/action_loginFragment_to_listFragment"
+      app:destination="@id/listFragment"/>
+  </fragment>
+
+  <fragment
+    android:id="@+id/listFragment"
+    android:name="com.zoltanlorinczi.project_retrofit.fragment.TasksListFragment"
+    android:label="ListFragment"
+    tools:layout="@layout/fragment_tasks_list">
+    <action
+        android:id="@+id/action_listFragment_to_detailsFragment"
+        app:destination="@id/detailsFragment" />
+    <action
+        android:id="@+id/action_listFragment_to_addTaskFragment"
+        app:destination="@id/addTaskFragment" />
+    <action
+        android:id="@+id/action_listFragment_to_settingsFragment2"
+        app:destination="@id/settingsFragment2" />
+    <action
+        android:id="@+id/action_listFragment_to_groupFragment"
+        app:destination="@id/groupFragment" />
+  </fragment>
+  <fragment
+      android:id="@+id/detailsFragment"
+      android:name="com.zoltanlorinczi.project_retrofit.fragment.DetailsFragment"
+      android:label="DetailsFragment"
+      tools:layout="@layout/fragment_details"/>
+  <fragment
+      android:id="@+id/addTaskFragment"
+      android:name="com.zoltanlorinczi.project_retrofit.fragment.AddTaskFragment"
+      android:label="AddTaskFragment"
+      tools:layout="@layout/fragment_add_task"/>
+  <fragment
+      android:id="@+id/settingsFragment2"
+      android:name="com.zoltanlorinczi.project_retrofit.fragment.SettingsFragment"
+      android:label="SettingsFragment"
+      tools:layout="@layout/fragment_settings">
+    <action
+        android:id="@+id/action_settingsFragment2_to_updateFragment"
+        app:destination="@id/updateFragment" />
+    <action
+        android:id="@+id/action_settingsFragment2_to_groupFragment"
+        app:destination="@id/groupFragment" />
+  </fragment>
+  <fragment
+      android:id="@+id/updateFragment"
+      android:name="com.example.a3tracker.fragment.UpdateFragment"
+      android:label="UpdateFragment"
+      tools:layout="@layout/fragment_update"/>
+  <fragment
+      android:id="@+id/groupFragment"
+      android:name="com.zoltanlorinczi.project_retrofit.fragment.GroupFragment"
+      android:label="GroupFragment"
+      tools:layout="@layout/fragment_group"/>
+</navigation>

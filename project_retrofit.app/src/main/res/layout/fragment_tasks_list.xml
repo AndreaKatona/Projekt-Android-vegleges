@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recycler_view"
+      android:layout_width="395dp"
+      android:layout_height="531dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="16dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.696"
+      tools:itemCount="10"
+      tools:listitem="@layout/tasks_list_item" />
+
+  <Button
+      android:id="@+id/addTask"
+      android:layout_width="58dp"
+      android:layout_height="48dp"
+      android:background="@drawable/ic_baseline_add_24"
+      android:backgroundTint="@color/colorGreen"
+      app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.329"
+      tools:ignore="SpeakableTextPresentCheck" />
+
+  <TextView
+      android:id="@+id/my_task"
+      android:layout_width="112dp"
+      android:layout_height="26dp"
+      android:text="@string/my_tasks"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.053"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.467" />
+
+  <Spinner
+      android:id="@+id/spinner"
+      android:layout_width="409dp"
+      android:layout_height="wrap_content"
+      android:minHeight="48dp"
+      android:prompt="@string/filter_task"
+      app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="1.0"
+      tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<resources>
+  <string name="app_name">3Track</string>?
+  <string name="sign_in">Hey, Sign in please</string>
+  <string name="tasks">Tasks</string>
+  <string name="email">Enter email</string>
+  <string name="password">Enter password</string>
+  <string name="login">Login</string>
+  <string name="profile_picture">Profile picture</string>
+  <string name="log_out">Log Out</string>
+  <string name="view_profile">View Profile</string>
+  <string name="my_tasks">My Tasks</string>
+  <string name="settings">Settings</string>
+  <string name="name">Name</string>
+  <string name="my_groups">My Groups</string>
+  <string name="activities">Activities</string>
+  <string name="department">Department</string>
+  <string name="deadline">Deadline</string>
+  <string name="assigned_by">Assigned By</string>
+  <string name="description">Description</string>
+  <string name="task_title">Task Title</string>
+  <string name="done">Done %</string>
+  <string name="update_profile">Update Profile</string>
+  <string name="save_changes">Save Changes</string>
+  <string name="update_personal_info">Update Personal Info</string>
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="this_is_a_simple_item">This is a simple item</string>
+  <string name="owner_s_profile_picture">Owner\'s profile picture</string>
+  <string name="tracker">3Tracker</string>
+  <string name="my_task_title">Task title</string>
+  <string name="created_by">Created by:</string>
+  <string name="assigned_to">Assigned To :</string>
+  <string name="task_description">Task Description</string>
+  <string name="task_deadline">Task Deadline</string>
+  <string name="status">Status</string>
+  <string name="priority">Priority</string>
+  <string name="New">New</string>
+  <string name="add_new_task">Add new task</string>
+  <string name="select_department">Select Department</string>
+  <string name="project_type">Project type</string>
+  <string name="progress_status">Progress status</string>
+  <string name="assigned_date">Assigned date</string>
+  <string name="assignee">Assignee</string>
+  <string name="in_progress">In Progress</string>
+  <string name="blocked">Blocked</string>
+  <string name="create">Create</string>
+  <string name ="filter_task">Filer tasks</string>
+
+
+</resources>
